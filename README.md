@@ -17,7 +17,7 @@ To install ProcScout, follow these steps:
    git clone https://github.com/Lenard-Code/ProcScout.git
 2. Navigate to the project directory:
   cd ProcScout
-3. Build the project using Visual Studio.
+3. Build the project using Visual Studio. (Procmon64.exe will need to be placed within the build folder)
 
 ## Usage
 Run the following command from an elevated command prompt (if not, UAC will be presented):
