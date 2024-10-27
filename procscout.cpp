@@ -147,6 +147,23 @@ bool ExtractResource(const std::wstring& outputPath) {
     return true;
 }
 
+// Function to wait until a file is fully created
+bool WaitForFileCreation(const std::wstring& filePath, int timeoutSeconds = 10) {
+    int elapsedSeconds = 0;
+    while (elapsedSeconds < timeoutSeconds) {
+        if (std::filesystem::exists(filePath)) {
+            std::ifstream file(filePath);
+            if (file.is_open()) {
+                file.close();
+                return true;
+            }
+        }
+        Sleep(1000); // Wait for 1 second before checking again
+        elapsedSeconds++;
+    }
+    return false;
+}
+
 
 int main() {
 
@@ -160,6 +177,12 @@ int main() {
     std::wcout << L"[+] Extracting to: " << outPath << std::endl; // Print the path
     if (!ExtractResource(outPath)) {
         std::cerr << "[-] Failed to extract Procmon64.exe" << std::endl;
+        return 1;
+    }
+
+    // Wait for the file to be fully created
+    if (!WaitForFileCreation(outPath)) {
+        std::cerr << "[-] Procmon64 creation timed out." << std::endl;
         return 1;
     }
 
