@@ -9,7 +9,7 @@ ProcScout is a utility designed to automate the use of Procmon (Process Monitor)
 - Converts Procmon logs from PML to CSV
 - Detects writable directories for potential DLL hijacking
 
-  ![ProcScout Example](/ProcScout/example.jpeg)
+  ![ProcScout Example](/example.jpeg)
 
 ## Installation
 
