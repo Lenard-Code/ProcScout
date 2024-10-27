@@ -28,8 +28,8 @@ procscout.exe
 ProcScout will:
 1. Extract and run Procmon64.exe 
 2. Capture process activity for 60 seconds (Default, manual change if needed longer)
-3. Convert the captured log to CSV format
-4. Check the log for writable directories that can be exploited for DLL hijacking
+3. Convert the captured PML log to CSV format
+4. Check the CSV log for writable directories that can be exploited for DLL hijacking
 
 ##License
 ProcScout is licensed under the MIT License. See the LICENSE file for more details.
