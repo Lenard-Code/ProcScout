@@ -1,6 +1,6 @@
 # ProcScout
 
-ProcScout is a utility designed to automate the use of Procmon (Process Monitor) for detecting potential DLL hijacking vulnerabilities (via custom config). It simplifies the process by automating the extraction and analysis of process monitoring logs. UAC will be prompted for non-elevated accounts running the program.
+ProcScout is a utility designed to automate the use of Procmon (Process Monitor) to ssist Blue Teams with detecting potential DLL hijacking vulnerabilities (via custom config). It simplifies the process by automating the extraction and analysis of process monitoring logs. UAC will be prompted for non-elevated accounts running the program.
 
 ## Features
 
