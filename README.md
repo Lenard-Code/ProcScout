@@ -1,8 +1,7 @@
 # ProcScout
 
-ProcScout is a utility designed to automate the use of Procmon (Process Monitor) to ssist Blue Teams with detecting potential DLL hijacking vulnerabilities (via custom config). It simplifies the process by automating the extraction and analysis of process monitoring logs. UAC will be prompted for non-elevated accounts running the program.
-
-## Features
+ProcScout is a utility designed to automate the use of Procmon (Process Monitor) to ssist Blue Teams with detecting potential DLL hijacking vulnerabilities (via custom config). It simplifies the process by automating the extraction and analysis of process monitoring logs.
+# Features
 
 - Automates the extraction and execution of Procmon64.exe
 - Checks Safe DLL Search Mode status
@@ -11,7 +10,7 @@ ProcScout is a utility designed to automate the use of Procmon (Process Monitor)
 
   ![ProcScout Example](/example.jpeg)
 
-## Installation
+# Installation
 
 To install ProcScout, follow these steps:
 
@@ -21,7 +20,7 @@ To install ProcScout, follow these steps:
   cd ProcScout
 3. Build the project using Visual Studio. (Procmon64.exe will need to be placed within the build folder)
 
-## Usage
+# Usage
 Run the following command from an elevated command prompt (if not, UAC will be presented):
 procscout.exe
 
@@ -31,5 +30,5 @@ ProcScout will:
 3. Convert the captured PML log to CSV format
 4. Check the CSV log for writable directories that can be exploited for DLL hijacking
 
-##License
+# License
 ProcScout is licensed under the MIT License. See the LICENSE file for more details.
